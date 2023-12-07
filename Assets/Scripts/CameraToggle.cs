@@ -56,7 +56,7 @@ public class CameraToggle : MonoBehaviour
         }
     }
 
-    private void SwitchCamsUsingThreeKeys()
+    private void SwitchCamsUsingThreeKeys() //This function is for changing cam with multiple keys, it's not needed when I can cycle with 1 key
     {
         if (Input.GetKeyDown(KeyCode.F))
         {
@@ -89,7 +89,7 @@ public class CameraToggle : MonoBehaviour
     }
 
     void SwitchToSideView()
-    { 
+    {
         sideView.enabled = true;
         firstPerson.enabled = false;
         thirdPerson.enabled = false;
