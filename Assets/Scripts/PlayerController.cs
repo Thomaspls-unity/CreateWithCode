@@ -12,6 +12,8 @@ public class PlayerController : MonoBehaviour
     public float sprintSpeed = 40.0f;
     public float rotateSpeed = 60.0f;
     public Rigidbody playerRb;
+    public string horizontalInputValue;
+    public string verticalInputValue;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,8 +29,8 @@ public class PlayerController : MonoBehaviour
 
     public void GetInput()
     {
-        horizontalInput = Input.GetAxis("Horizontal");
-        verticalInput = Input.GetAxis("Vertical");
+        horizontalInput = Input.GetAxis(horizontalInputValue);
+        verticalInput = Input.GetAxis(verticalInputValue);
     }
 
     private void FixedUpdate()
