@@ -27,8 +27,8 @@ public class PlayerMovement : MonoBehaviour
     {
         GetInput();
         SpeedBoost();
-        //MovePlayerWithTranslate(transform, speed); //Function / Method, they are the same thing
-        //MovePlayerWithRotate(transform, rotateSpeed, speed);
+        MovePlayerWithTranslate(transform, speed); //Function / Method, they are the same thing
+        MovePlayerWithRotate(transform, rotateSpeed, speed);
     }
 
     private void MovePlayerWithTranslate(Transform player, float speed = 10.0f) //Function parameter
@@ -48,8 +48,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void GetInput()
     {
-        horizontalInput = Input.GetAxis("Horizontal");
-        verticalInput = Input.GetAxis("Vertical");
+        horizontalInput = Input.GetAxis("Horizontal2");
+        verticalInput = Input.GetAxis("Vertical2");
     }
 
     private void SpeedBoost()
